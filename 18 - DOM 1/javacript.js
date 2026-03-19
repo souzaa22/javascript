@@ -1,0 +1,21 @@
+function mudarTexto(){
+    let titulo = document.getElementById("titulo")
+titulo.innerText = "Você clicou no botão"
+titulo.style.color = "blue"
+
+}
+let mensagem = document.getElementById("mensagem")
+function saudacao(){
+
+let nome = document.getElementById("nome").value
+    mensagem.innerText = "Olá " + nome
+}
+let texto = document.getElementById("texto")
+function sumir(){
+    if(    texto.style.display == 'none'){
+            texto.style.display = 'block'
+    } else{
+            texto.style.display = 'none'
+
+    }
+}
