@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.carrosel{
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+img{
+    width: 300px;
+    display: none;
+}
+.ativa{
+    display: block;
+}
+
+.carrosel2{
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.img2{
+    width: 300px;
+    display: none;
+}
+.ativa2{
+    display: block;
+        width: 300px;
+
+}
+.txtativo{
+    font-size: 20px;
+}
