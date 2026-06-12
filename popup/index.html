@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Popups</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Exemplos de Popups</h1>
+
+<button onclick="abrirLogin()">1. Popup de Login</button>
+
+<button onclick="abrirConfirmacao()">2. Popup de Confirmação</button>
+
+<div class="imagem">
+    <h2>3. Popup com Imagem</h2>
+    <img src="https://picsum.photos/200" onclick="abrirImagem(this)">
+</div>
+
+<button onclick="mostrarCuriosidade()">4. Popup de Curiosidade</button>
+
+<button onclick="verificarSenha()">5. Popup de Aviso</button>
+
+<!-- Popup Login -->
+<div id="popupLogin" class="popup">
+    <div class="conteudo">
+        <span class="fechar" onclick="fecharLogin()">&times;</span>
+        <h2>Login</h2>
+
+        <input type="text" placeholder="Usuário"><br><br>
+
+        <input type="password" placeholder="Senha"><br><br>
+
+        <button onclick="entrar()">Entrar</button>
+    </div>
+</div>
+
+<!-- Popup Imagem -->
+<div id="popupImagem" class="popup">
+    <div class="conteudo">
+        <span class="fechar" onclick="fecharImagem()">&times;</span>
+
+        <img id="imagemGrande">
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
